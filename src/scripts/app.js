@@ -3,6 +3,9 @@ import p2 from './page2';
 import p3 from './page3';
 import '../styles.css';
 
+const buttArea = document.createElement('div');
+buttArea.classList.add('buttArea');
+document.body.appendChild(buttArea);
 const homeButt = document.createElement('button');
 const menuButt = document.createElement('button');
 const aboutButt = document.createElement('button');
@@ -16,6 +19,6 @@ menuButt.addEventListener('click', p2);
 aboutButt.addEventListener('click', p3);
 
 
-document.body.appendChild(homeButt);
-document.body.appendChild(menuButt);
-document.body.appendChild(aboutButt);
+buttArea.appendChild(homeButt);
+buttArea.appendChild(menuButt);
+buttArea.appendChild(aboutButt);
